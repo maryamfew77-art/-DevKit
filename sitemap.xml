@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://your-domain.com/</loc>
+        <loc>https://dekit-maryam-ayubs-projects.vercel.app/</loc>
     </url>
 
     <url>
-        <loc>https://your-domain.com/tools/json.html</loc>
+        <loc>https://dekit-maryam-ayubs-projects.vercel.app/tools/json.html</loc>
     </url>
 
     <url>
-        <loc>https://your-domain.com/tools/text.html</loc>
+        <loc>https://dekit-maryam-ayubs-projects.vercel.app/tools/text.html</loc>
     </url>
 
     <url>
-        <loc>https://your-domain.com/tools/color.html</loc>
+        <loc>https://dekit-maryam-ayubs-projects.vercel.app/tools/color.html</loc>
     </url>
 
     <url>
-        <loc>https://your-domain.com/tools/password.html</loc>
+        <loc>https://dekit-maryam-ayubs-projects.vercel.app/tools/password.html</loc>
     </url>
 
 </urlset>
