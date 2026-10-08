@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DevKit - Free Developer Tools</title>
+
+    <meta
+      name="description"
+      content="DevKit is a collection of fast and useful developer tools including JSON Formatter, Text Toolkit, Color Converter, and Password Generator."
+    />
+
+    <meta
+      name="keywords"
+      content="developer tools, JSON formatter, text toolkit, color converter, password generator"
+    />
+
+    <meta name="author" content="Maryam Ayub" />
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="DevKit - Developer Tools" />
+
+    <meta
+      property="og:description"
+      content="A collection of fast and useful developer tools including JSON Formatter, Text Toolkit, Color Converter, and Password Generator."
+    />
+
+    <meta property="og:type" content="website" />
+
+    
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="logo">
+        <span>&lt;/&gt;</span>
+        DevKit
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a href="#tools" class="nav-button">Explore Tools</a>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="hero-label">FREE ONLINE WEB TOOLS</p>
+
+          <h1>
+            Powerful Tools.
+            <span>Simple & Fast.</span>
+          </h1>
+
+          <p class="hero-description">
+            Useful online tools for developers, students and creators — all in
+            one place.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#tools" class="primary-button"> Explore Tools → </a>
+
+            <a href="#about" class="secondary-button"> Learn More </a>
+          </div>
+        </div>
+
+        <!-- Hero visual -->
+
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="code-content">
+              <p>
+                <span class="purple">const</span>
+                <span class="blue">devkit</span> = {
+              </p>
+
+              <p class="indent">tools: <span class="green">4</span>,</p>
+
+              <p class="indent">fast: <span class="orange">true</span>,</p>
+
+              <p class="indent">free: <span class="orange">true</span></p>
+
+              <p>};</p>
+
+              <p class="success">✓ Ready to use</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TOOLS ================= -->
+
+      <section class="tools-section" id="tools">
+        <div class="section-heading">
+          <p class="section-label">OUR TOOLS</p>
+
+          <h2>
+            Everything you need,
+            <span>in one place.</span>
+          </h2>
+
+          <p>
+            Simple, fast and free tools designed to make everyday tasks easier.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- JSON Tool -->
+
+          <div class="tool-card">
+            <div class="tool-icon json-icon">{}</div>
+
+            <h3>JSON Formatter</h3>
+
+            <p>Format, validate and minify JSON quickly and easily.</p>
+
+            <a href="tools/json.html"> Open Tool → </a>
+          </div>
+
+          <!-- Text Tool -->
+
+          <div class="tool-card">
+            <div class="tool-icon text-icon">Aa</div>
+
+            <h3>Text Toolkit</h3>
+
+            <p>Count, transform and clean your text with useful utilities.</p>
+
+            <a href="tools/text.html"> Open Tool → </a>
+          </div>
+
+          <!-- Color Tool -->
+
+          <div class="tool-card">
+            <div class="tool-icon color-icon">◉</div>
+
+            <h3>Color Converter</h3>
+
+            <p>Convert HEX, RGB and HSL colors instantly.</p>
+
+            <a href="tools/color.html"> Open Tool → </a>
+          </div>
+
+          <!-- Password Tool -->
+
+          <div class="tool-card">
+            <div class="tool-icon password-icon">🔐</div>
+
+            <h3>Password Generator</h3>
+
+            <p>Generate strong and customizable passwords instantly.</p>
+
+            <a href="tools/password.html"> Open Tool → </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+
+      <section class="about-section" id="about">
+        <div class="about-content">
+          <p class="section-label">WHY DEVKIT?</p>
+
+          <h2>
+            Tools that are
+            <span>simple to use.</span>
+          </h2>
+
+          <p>
+            DevKit brings useful everyday web utilities together in one clean
+            and easy-to-use platform.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <strong>⚡</strong>
+            <h3>Fast</h3>
+            <p>Get results instantly.</p>
+          </div>
+
+          <div class="feature">
+            <strong>🔒</strong>
+            <h3>Browser Based</h3>
+            <p>Your data stays in your browser.</p>
+          </div>
+
+          <div class="feature">
+            <strong>📱</strong>
+            <h3>Responsive</h3>
+            <p>Works on mobile and desktop.</p>
+          </div>
+
+          <div class="feature">
+            <strong>🆓</strong>
+            <h3>Free</h3>
+            <p>No installation required.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="footer-logo">&lt;/&gt; DevKit</div>
+
+      <p>Simple tools for developers, students and creators.</p>
+
+      <p class="copyright">© 2026 DevKit. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color Converter - DevKit</title>
+
+    <title>Color Converter - DevKit</title>
+
+    <meta
+      name="description"
+      content="Convert colors between common formats quickly with DevKit's free online Color Converter."
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/color.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="../index.html" class="logo">
+        <span>&lt;/&gt;</span>
+        DevKit
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#tools">Tools</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+
+      <a href="../index.html#tools" class="nav-button"> All Tools </a>
+    </header>
+
+    <!-- MAIN -->
+    <main class="color-page">
+      <!-- HEADER -->
+      <section class="color-header">
+        <p class="section-label">DESIGNER TOOL</p>
+
+        <h1>Color <span>Converter</span></h1>
+
+        <p>Convert colors between HEX, RGB and HSL formats.</p>
+      </section>
+
+      <!-- COLOR TOOL -->
+      <section class="color-tool">
+        <!-- COLOR PREVIEW -->
+        <div class="color-preview" id="colorPreview">
+          <span>Color Preview</span>
+        </div>
+
+        <!-- COLOR PICKER -->
+        <div class="picker-section">
+          <label for="colorPicker"> Choose a Color </label>
+
+          <input type="color" id="colorPicker" value="#7567f8" />
+        </div>
+
+        <!-- HEX INPUT -->
+        <div class="hex-section">
+          <label for="hexInput"> HEX Color </label>
+
+          <div class="hex-input-row">
+            <input
+              type="text"
+              id="hexInput"
+              value="#7567F8"
+              placeholder="#000000"
+              maxlength="7"
+            />
+
+            <button id="convertBtn" class="primary-color-btn">Convert</button>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="color-results">
+          <!-- RGB -->
+          <div class="color-result-box">
+            <div>
+              <span class="result-label"> RGB </span>
+
+              <p id="rgbResult">rgb(117, 103, 248)</p>
+            </div>
+
+            <button class="copy-color-btn" data-target="rgbResult">Copy</button>
+          </div>
+
+          <!-- HSL -->
+          <div class="color-result-box">
+            <div>
+              <span class="result-label"> HSL </span>
+
+              <p id="hslResult">hsl(247, 91%, 69%)</p>
+            </div>
+
+            <button class="copy-color-btn" data-target="hslResult">Copy</button>
+          </div>
+
+          <!-- HEX -->
+          <div class="color-result-box">
+            <div>
+              <span class="result-label"> HEX </span>
+
+              <p id="hexResult">#7567F8</p>
+            </div>
+
+            <button class="copy-color-btn" data-target="hexResult">Copy</button>
+          </div>
+        </div>
+
+        <!-- CLEAR -->
+        <button id="resetBtn" class="reset-color-btn">Reset Color</button>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">&lt;/&gt; DevKit</div>
+
+      <p>Simple tools for developers, students and creators.</p>
+
+      <p class="copyright">© 2026 DevKit. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/color.js"></script>
+  </body>
+</html>

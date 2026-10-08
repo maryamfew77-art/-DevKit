@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JSON Formatter - DevKit</title>
+
+    <meta
+      name="description"
+      content="Format, validate, and beautify JSON easily with DevKit's free online JSON Formatter."
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Tool-specific CSS -->
+    <link rel="stylesheet" href="../css/json.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <a href="../index.html" class="logo">
+        <span>&lt;/&gt;</span>
+        DevKit
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+
+        <a href="../index.html#tools">Tools</a>
+
+        <a href="../index.html#about">About</a>
+      </nav>
+
+      <a href="../index.html#tools" class="nav-button"> All Tools </a>
+    </header>
+
+    <!-- ================= JSON TOOL ================= -->
+
+    <main class="json-page">
+      <section class="json-header">
+        <p class="section-label">DEVELOPER TOOL</p>
+
+        <h1>JSON <span>Formatter</span></h1>
+
+        <p>Format, validate and minify your JSON quickly and easily.</p>
+      </section>
+
+      <!-- ================= TOOL BOX ================= -->
+
+      <section class="json-tool">
+        <div class="editor-header">
+          <div>
+            <h2>JSON Input</h2>
+
+            <p>Paste your JSON below</p>
+          </div>
+
+          <span id="status" class="status"> Ready </span>
+        </div>
+
+        <textarea
+          id="jsonInput"
+          placeholder='Paste your JSON here...
+
+Example:
+{
+    "name": "Maryam",
+    "age": 20
+}'
+        ></textarea>
+
+        <!-- ================= BUTTONS ================= -->
+
+        <div class="json-buttons">
+          <button id="formatBtn" class="primary-tool-btn">Format</button>
+
+          <button id="minifyBtn" class="secondary-tool-btn">Minify</button>
+
+          <button id="validateBtn" class="secondary-tool-btn">Validate</button>
+
+          <button id="clearBtn" class="clear-btn">Clear</button>
+        </div>
+
+        <!-- ================= RESULT ================= -->
+
+        <div class="result-header">
+          <div>
+            <h2>Result</h2>
+
+            <p id="message">Your formatted JSON will appear here.</p>
+          </div>
+
+          <button id="copyBtn" class="copy-btn">Copy</button>
+        </div>
+
+        <textarea
+          id="jsonOutput"
+          placeholder="Result will appear here..."
+          readonly
+        ></textarea>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="footer-logo">&lt;/&gt; DevKit</div>
+
+      <p>Simple tools for developers, students and creators.</p>
+
+      <p class="copyright">© 2026 DevKit. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="../js/json.js"></script>
+  </body>
+</html>

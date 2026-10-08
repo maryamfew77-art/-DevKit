@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Text Toolkit - DevKit</title>
+
+    <meta
+      name="description"
+      content="Use DevKit's Text Toolkit to transform, analyze, and work with text quickly and easily."
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/text.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="../index.html" class="logo">
+        <span>&lt;/&gt;</span>
+        DevKit
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#tools">Tools</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+
+      <a href="../index.html#tools" class="nav-button"> All Tools </a>
+    </header>
+
+    <!-- MAIN -->
+    <main class="text-page">
+      <!-- PAGE HEADER -->
+      <section class="text-header">
+        <p class="section-label">PRODUCTIVITY TOOL</p>
+
+        <h1>Text <span>Toolkit</span></h1>
+
+        <p>Count, transform and clean your text quickly and easily.</p>
+      </section>
+
+      <!-- TEXT TOOL -->
+      <section class="text-tool">
+        <!-- STATS -->
+        <div class="text-stats">
+          <div class="stat-box">
+            <span id="wordCount">0</span>
+            <p>Words</p>
+          </div>
+
+          <div class="stat-box">
+            <span id="charCount">0</span>
+            <p>Characters</p>
+          </div>
+
+          <div class="stat-box">
+            <span id="charNoSpace">0</span>
+            <p>No Spaces</p>
+          </div>
+
+          <div class="stat-box">
+            <span id="sentenceCount">0</span>
+            <p>Sentences</p>
+          </div>
+        </div>
+
+        <!-- INPUT -->
+        <div class="text-editor-header">
+          <div>
+            <h2>Your Text</h2>
+            <p>Write or paste your text below</p>
+          </div>
+        </div>
+
+        <textarea
+          id="textInput"
+          placeholder="Start typing or paste your text here..."
+        ></textarea>
+
+        <!-- BUTTONS -->
+        <div class="text-buttons">
+          <button id="upperBtn" class="primary-text-btn">UPPERCASE</button>
+
+          <button id="lowerBtn" class="secondary-text-btn">lowercase</button>
+
+          <button id="titleBtn" class="secondary-text-btn">Title Case</button>
+
+          <button id="cleanBtn" class="secondary-text-btn">
+            Remove Extra Spaces
+          </button>
+
+          <button id="copyBtn" class="copy-text-btn">Copy</button>
+
+          <button id="clearBtn" class="clear-text-btn">Clear</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">&lt;/&gt; DevKit</div>
+
+      <p>Simple tools for developers, students and creators.</p>
+
+      <p class="copyright">© 2026 DevKit. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/text.js"></script>
+  </body>
+</html>

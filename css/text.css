@@ -1,0 +1,317 @@
+/* =========================
+   TEXT TOOLKIT PAGE
+========================= */
+
+.text-page {
+    min-height: 80vh;
+    padding: 80px 7%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.text-header {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.text-header h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin-bottom: 18px;
+}
+
+.text-header h1 span {
+    background: linear-gradient(
+        90deg,
+        #7567f8,
+        #4f9cff,
+        #35d6e8
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.text-header p:last-child {
+    color: #aeb8d9;
+    font-size: 17px;
+}
+
+
+/* =========================
+   TOOL BOX
+========================= */
+
+.text-tool {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+
+    background: #1a2450;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.text-stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    padding: 20px;
+
+    text-align: center;
+
+    background: #10183f;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+}
+
+.stat-box span {
+    display: block;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #7ddcff;
+
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #8995bd;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   EDITOR HEADER
+========================= */
+
+.text-editor-header {
+    margin-bottom: 15px;
+}
+
+.text-editor-header h2 {
+    font-size: 18px;
+}
+
+.text-editor-header p {
+    color: #8995bd;
+
+    font-size: 13px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+#textInput {
+    width: 100%;
+
+    min-height: 300px;
+
+    resize: vertical;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: #10183f;
+
+    color: #e8ebf7;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    outline: none;
+}
+
+#textInput:focus {
+    border-color: #7567f8;
+
+    box-shadow:
+        0 0 0 3px rgba(117, 103, 248, 0.1);
+}
+
+#textInput::placeholder {
+    color: #69759d;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.text-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.text-buttons button {
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 9px;
+
+    padding: 11px 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+/* PRIMARY */
+
+.primary-text-btn {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7567f8,
+            #4f9cff
+        );
+}
+
+.primary-text-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(117, 103, 248, 0.25);
+}
+
+
+/* SECONDARY */
+
+.secondary-text-btn {
+    color: #dce2f5;
+
+    background: #273365;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.08) !important;
+}
+
+.secondary-text-btn:hover {
+    background: #303d73;
+}
+
+
+/* COPY */
+
+.copy-text-btn {
+    color: #7ddcff;
+
+    background:
+        rgba(125, 220, 255, 0.08);
+
+    border: 1px solid
+        rgba(125, 220, 255, 0.15) !important;
+}
+
+.copy-text-btn:hover {
+    background:
+        rgba(125, 220, 255, 0.15);
+}
+
+
+/* CLEAR */
+
+.clear-text-btn {
+    color: #ff9cbf;
+
+    background:
+        rgba(255, 120, 170, 0.08);
+
+    border: 1px solid
+        rgba(255, 120, 170, 0.15) !important;
+}
+
+.clear-text-btn:hover {
+    background:
+        rgba(255, 120, 170, 0.15);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .text-page {
+        padding: 60px 5%;
+    }
+
+    .text-tool {
+        padding: 20px;
+    }
+
+    .text-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #textInput {
+        min-height: 250px;
+
+        font-size: 14px;
+    }
+
+    .text-buttons {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .text-buttons button {
+        width: 100%;
+    }
+
+    .text-header h1 {
+        font-size: 42px;
+    }
+}

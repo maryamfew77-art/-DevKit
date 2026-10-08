@@ -1,0 +1,373 @@
+/* =========================
+   COLOR CONVERTER PAGE
+========================= */
+
+.color-page {
+    min-height: 80vh;
+    padding: 80px 7%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.color-header {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.color-header h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin-bottom: 18px;
+}
+
+.color-header h1 span {
+    background: linear-gradient(
+        90deg,
+        #7567f8,
+        #4f9cff,
+        #35d6e8
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-header p:last-child {
+    color: #aeb8d9;
+    font-size: 17px;
+}
+
+
+/* =========================
+   TOOL BOX
+========================= */
+
+.color-tool {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 30px;
+
+    background: #1a2450;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   COLOR PREVIEW
+========================= */
+
+.color-preview {
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #7567f8;
+
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+}
+
+.color-preview span {
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: white;
+
+    font-size: 14px;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+.picker-section label,
+.hex-section label {
+    display: block;
+
+    color: #dce2f5;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   COLOR PICKER
+========================= */
+
+#colorPicker {
+    width: 100%;
+
+    height: 55px;
+
+    padding: 5px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px;
+
+    background: #10183f;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HEX INPUT
+========================= */
+
+.hex-section {
+    margin-top: 25px;
+}
+
+.hex-input-row {
+    display: flex;
+
+    gap: 12px;
+}
+
+#hexInput {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: #10183f;
+
+    color: #e8ebf7;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+#hexInput:focus {
+    border-color: #7567f8;
+
+    box-shadow:
+        0 0 0 3px rgba(117, 103, 248, 0.1);
+}
+
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary-color-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 0 22px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-weight: 600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7567f8,
+            #4f9cff
+        );
+
+    transition: 0.3s;
+}
+
+.primary-color-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(117, 103, 248, 0.25);
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+.color-results {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.color-result-box {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: #10183f;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+}
+
+.result-label {
+    display: block;
+
+    color: #8995bd;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.color-result-box p {
+    color: #e8ebf7;
+
+    font-family: monospace;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+/* =========================
+   COPY BUTTON
+========================= */
+
+.copy-color-btn {
+    flex-shrink: 0;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 8px 11px;
+
+    border-radius: 7px;
+
+    color: #7ddcff;
+
+    background:
+        rgba(125, 220, 255, 0.08);
+
+    border: 1px solid
+        rgba(125, 220, 255, 0.15);
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.copy-color-btn:hover {
+    background:
+        rgba(125, 220, 255, 0.15);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+.reset-color-btn {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: 1px solid
+        rgba(255, 120, 170, 0.15);
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    color: #ff9cbf;
+
+    background:
+        rgba(255, 120, 170, 0.08);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.reset-color-btn:hover {
+    background:
+        rgba(255, 120, 170, 0.15);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .color-page {
+        padding: 60px 5%;
+    }
+
+    .color-tool {
+        padding: 20px;
+    }
+
+    .color-preview {
+        height: 180px;
+    }
+
+    .hex-input-row {
+        flex-direction: column;
+    }
+
+    .primary-color-btn {
+        height: 45px;
+    }
+
+    .color-results {
+        grid-template-columns: 1fr;
+    }
+
+    .color-header h1 {
+        font-size: 42px;
+    }
+}
