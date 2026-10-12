@@ -178,7 +178,7 @@ a {
 .primary-button {
     background: linear-gradient(
         135deg,
-        #7567f8,
+        #000000,
         #4f9cff
     );
 }
@@ -1008,3 +1008,150 @@ footer p {
 }
 
 /* Existing animations and responsive rules remain unchanged */
+
+/* ===== DevKit Light Blue Theme ===== */
+
+:root {
+  --bg-main: #F1F4FC;
+  --bg-card: #FFFFFF;
+  --bg-section: #EAF0FC;
+  --bg-secondary: #E4E9FF;
+
+  --text-main: #243B6B;
+  --text-muted: #64748B;
+
+  --primary: #2563EB;
+  --primary-light: #5B6EF5;
+  --border-color: #DDE4F2;
+}
+
+/* Main page */
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.navbar a,
+.navbar .logo {
+  color: var(--text-main);
+}
+
+/* Hero section */
+.hero {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(91, 110, 245, 0.12),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(37, 99, 235, 0.10),
+      transparent 38%
+    ),
+    var(--bg-main);
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
+  color: var(--text-main);
+}
+
+.hero p {
+  color: var(--text-muted);
+}
+
+/* Keep the vibrant gradient identity */
+.hero h1 span,
+.gradient-text {
+  background: linear-gradient(135deg, #5B6EF5, #2563EB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Code preview */
+.code-window {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 12px 35px rgba(36, 59, 107, 0.08);
+  color: var(--text-main);
+}
+
+/* Sections */
+.tools-section,
+.features-section {
+  background: var(--bg-section);
+}
+
+.tools-section h2,
+.features-section h2,
+.tools-section h3,
+.features-section h3 {
+  color: var(--text-main);
+}
+
+/* Cards */
+.tool-card,
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 6px 20px rgba(36, 59, 107, 0.05);
+}
+
+.tool-card h3,
+.feature-card h3 {
+  color: var(--text-main);
+}
+
+.tool-card p,
+.feature-card p {
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.primary-button,
+.hero primary-button {
+  background: linear-gradient(135deg, #bbc6df, #808ce4);
+  color: white;
+  border: none;
+}
+
+.primary-button:hover,
+.hero .primary-button:hover {
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.22);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+}
+
+/* Footer */
+footer {
+  background: #E4E9FF;
+  color: var(--text-main);
+  border-top: 1px solid var(--border-color);
+}
+
+footer a {
+  color: var(--text-main);
+}
+
+footer p {
+  color: var(--text-muted);
+}
+
+/* Selection */
+::selection {
+  background: #D8E2FF;
+  color: #243B6B;
+}

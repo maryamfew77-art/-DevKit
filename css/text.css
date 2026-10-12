@@ -412,3 +412,58 @@
 .clear-text-btn:hover {
     background: #ffe4e6;
 }
+
+
+/* ===== Text Toolkit Light Theme ===== */
+
+.tool-box {
+  background: #FFFFFF;
+  color: #243B6B;
+  border: 1px solid #DDE4F2;
+  box-shadow: 0 8px 25px rgba(36, 59, 107, 0.05);
+}
+
+.tool-box h1,
+.tool-box h2,
+.tool-box h3,
+.tool-box label {
+  color: #243B6B;
+}
+
+.tool-box p,
+.tool-box small {
+  color: #64748B;
+}
+
+.tool-box textarea,
+.tool-box input,
+.tool-box select {
+  background: #F1F4FC;
+  color: #243B6B;
+  border: 1px solid #DDE4F2;
+}
+
+.tool-box textarea:focus,
+.tool-box input:focus,
+.tool-box select:focus {
+  border-color: #2563EB;
+  outline: 2px solid rgba(37, 99, 235, 0.12);
+}
+
+.tool-box button {
+  background: linear-gradient(135deg, #2563EB, #5B6EF5);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tool-box button:hover {
+  filter: brightness(1.05);
+}
+
+.tool-box .copy-btn,
+.tool-box .clear-btn,
+.tool-box .secondary-btn {
+  background: #E4E9FF;
+  color: #243B6B;
+  border: 1px solid #DDE4F2;
+}
