@@ -289,3 +289,95 @@
     }
 
 }
+
+
+/* =========================
+   LIGHT THEME OVERRIDES
+========================= */
+
+.json-header h1 {
+    color: #172b4d;
+}
+
+.json-header h1 span {
+    background: linear-gradient(90deg, #1d4ed8, #3b82f6, #0891b2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.json-header p:last-child {
+    color: #64748b;
+}
+
+.json-tool {
+    background: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 20px 60px rgba(23, 43, 77, 0.08);
+}
+
+.editor-header h2,
+.result-header h2 {
+    color: #172b4d;
+}
+
+.editor-header p,
+.result-header p {
+    color: #64748b;
+}
+
+.status {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+#jsonInput,
+#jsonOutput {
+    background: #f8fafc;
+    border-color: #dbe4f0;
+    color: #172b4d;
+}
+
+#jsonInput:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.primary-tool-btn {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.primary-tool-btn:hover {
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.secondary-tool-btn {
+    color: #334155;
+    background: #f1f5f9;
+    border-color: #dbe4f0 !important;
+}
+
+.secondary-tool-btn:hover {
+    background: #e2e8f0;
+}
+
+.clear-btn {
+    color: #be123c;
+    background: #fff1f2;
+    border-color: #fecdd3 !important;
+}
+
+.clear-btn:hover {
+    background: #ffe4e6;
+}
+
+.copy-btn {
+    color: #1d4ed8;
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.copy-btn:hover {
+    background: #dbeafe;
+}

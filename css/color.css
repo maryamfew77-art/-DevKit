@@ -1,3 +1,4 @@
+
 /* =========================
    COLOR CONVERTER PAGE
 ========================= */
@@ -370,4 +371,85 @@
     .color-header h1 {
         font-size: 42px;
     }
+}
+
+
+/* =========================
+   LIGHT THEME OVERRIDES
+========================= */
+
+.color-header h1 {
+    color: #172b4d;
+}
+
+.color-header h1 span {
+    background: linear-gradient(90deg, #1d4ed8, #3b82f6, #0891b2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-header p:last-child {
+    color: #64748b;
+}
+
+.color-tool {
+    background: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 20px 60px rgba(23, 43, 77, 0.08);
+}
+
+.picker-section label,
+.hex-section label {
+    color: #334155;
+}
+
+#colorPicker,
+#hexInput,
+.color-result-box {
+    background: #f8fafc;
+    border-color: #dbe4f0;
+}
+
+#hexInput,
+.color-result-box p {
+    color: #172b4d;
+}
+
+#hexInput:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.primary-color-btn {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.primary-color-btn:hover {
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.result-label {
+    color: #64748b;
+}
+
+.copy-color-btn {
+    color: #1d4ed8;
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.copy-color-btn:hover {
+    background: #dbeafe;
+}
+
+.reset-color-btn {
+    color: #be123c;
+    background: #fff1f2;
+    border-color: #fecdd3;
+}
+
+.reset-color-btn:hover {
+    background: #ffe4e6;
 }
