@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert JSON arrays into CSV files with DevKit.">
+  <title>JSON to CSV Converter | DevKit</title>
+  <link rel="stylesheet" href="../css/json-csv.css">
+</head>
+<body>
+  <main class="container">
+    <a href="../index.html" class="back-link">← Back to DevKit</a>
+
+    <section class="card">
+      <div class="tool-icon">📊</div>
+      <h1>JSON to CSV Converter</h1>
+      <p class="subtitle">Convert JSON arrays into CSV data and download the result.</p>
+
+      <label for="json-input">Enter JSON</label>
+      <textarea id="json-input" placeholder='[{"name":"Maryam","age":20},{"name":"Ali","age":22}]'></textarea>
+
+      <button id="convert-btn" class="primary-btn">Convert to CSV</button>
+
+      <div class="output-heading">
+        <label for="csv-output">CSV Output</label>
+        <button id="copy-btn" class="secondary-btn">Copy CSV</button>
+      </div>
+
+      <textarea id="csv-output" placeholder="Your CSV output will appear here..." readonly></textarea>
+
+      <div class="actions">
+        <button id="download-btn" class="secondary-btn">Download CSV</button>
+        <button id="clear-btn" class="clear-btn">Clear All</button>
+      </div>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/json-csv.js"></script>
+</body>
+</html>

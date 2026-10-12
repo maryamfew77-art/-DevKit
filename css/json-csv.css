@@ -1,0 +1,145 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 30px 16px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eff6ff, #f3e8ff);
+  color: #243047;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #5266d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dfe5f5;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(74, 85, 140, 0.1);
+}
+
+.tool-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin-bottom: 28px;
+  color: #69758b;
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  padding: 14px;
+  resize: vertical;
+  border: 1px solid #d5dced;
+  border-radius: 10px;
+  background: #fff;
+  color: #243047;
+  font: 14px/1.6 monospace;
+}
+
+textarea:focus {
+  outline: 2px solid #a5b4fc;
+  border-color: #7888ee;
+}
+
+button {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.primary-btn {
+  width: 100%;
+  margin: 16px 0 25px;
+  background: #6475e8;
+  color: #fff;
+}
+
+.output-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+
+.secondary-btn {
+  background: #e9edff;
+  color: #4657c5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.clear-btn {
+  background: #f0f2f8;
+  color: #48536b;
+}
+
+#message {
+  min-height: 20px;
+  margin-bottom: 0;
+  color: #5266d8;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 22px 17px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .output-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

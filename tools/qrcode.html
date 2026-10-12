@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate and download QR codes for text, links, and contact information with DevKit.">
+    <title>QR Code Generator | DevKit</title>
+
+    <link rel="stylesheet" href="../css/qrcode.css">
+
+    <!-- QR code generation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">DevKit<span>.</span></a>
+        <a href="../index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <main class="container">
+        <section class="tool-header">
+            <div class="tool-icon">▦</div>
+            <h1>QR Code Generator</h1>
+            <p>Turn your text, website links, or contact details into downloadable QR codes.</p>
+        </section>
+
+        <section class="tool-card">
+            <label for="qrInput">Enter Text or URL</label>
+
+            <textarea
+                id="qrInput"
+                placeholder="https://example.com"
+                maxlength="2000"
+            ></textarea>
+
+            <div class="options">
+                <div class="option-group">
+                    <label for="qrSize">QR Code Size</label>
+                    <select id="qrSize">
+                        <option value="128">Small (128 × 128)</option>
+                        <option value="200" selected>Medium (200 × 200)</option>
+                        <option value="256">Large (256 × 256)</option>
+                        <option value="320">Extra Large (320 × 320)</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="qrColor">QR Code Color</label>
+                    <input type="color" id="qrColor" value="#243B6B">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="generateBtn" class="primary-btn">Generate QR Code</button>
+                <button id="clearBtn" class="secondary-btn">Clear</button>
+            </div>
+
+            <div class="result-section">
+                <h2>Your QR Code</h2>
+
+                <div id="qrPlaceholder" class="qr-placeholder">
+                    Your QR code will appear here
+                </div>
+
+                <div id="qrOutput" class="qr-output" aria-label="Generated QR code"></div>
+
+                <button id="downloadBtn" class="download-btn" disabled>
+                    Download QR Code
+                </button>
+
+                <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h2>How to use this tool</h2>
+            <ol>
+                <li>Enter a website link, text, or contact information.</li>
+                <li>Choose the QR code size and color.</li>
+                <li>Click Generate QR Code.</li>
+                <li>Download the generated image and scan it with your phone.</li>
+            </ol>
+
+            <p class="note">
+                Tip: Use a dark QR code on a light background for easier scanning.
+                Always scan-test your code before sharing or printing it.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DevKit. Free tools for developers.</p>
+    </footer>
+  <script src="../js/qrcode.js"></script>
+</body>
+</html>

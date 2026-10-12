@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg: #F1F4FC;
+    --card-bg: #FFFFFF;
+    --primary: #2563EB;
+    --primary-light: #5B6EF5;
+    --text: #243B6B;
+    --muted: #64748B;
+    --border: #DDE4F2;
+    --soft-bg: #E4E9FF;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--page-bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    min-height: 72px;
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.back-link {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: min(850px, 90%);
+    margin: 45px auto;
+    flex: 1;
+}
+
+.tool-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.tool-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: var(--soft-bg);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.tool-header h1 {
+    font-size: clamp(25px, 4vw, 36px);
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.tool-header p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.tool-card,
+.info-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(36, 59, 107, 0.05);
+}
+
+.tool-card label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 170px;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--page-bg);
+    color: var(--text);
+    font: 14px/1.7 Consolas, "Courier New", monospace;
+    resize: vertical;
+    outline: none;
+    overflow-wrap: anywhere;
+}
+
+textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+textarea::placeholder {
+    color: #8793AD;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 26px;
+}
+
+button {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #93B4FF;
+    outline-offset: 3px;
+}
+
+.primary-btn {
+    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+
+.primary-btn:hover {
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.20);
+}
+
+.secondary-btn,
+.copy-btn {
+    color: var(--text);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.output-header label {
+    margin-bottom: 0;
+}
+
+.copy-btn {
+    padding: 9px 14px;
+    font-size: 12px;
+}
+
+.status-message {
+    min-height: 22px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+.status-message.error {
+    color: #B42318;
+}
+
+.status-message.success {
+    color: #167647;
+}
+
+.info-card {
+    margin-top: 24px;
+}
+
+.info-card h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.info-card .note {
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--soft-bg);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+footer {
+    text-align: center;
+    padding: 22px 16px;
+    background: #E4E9FF;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .back-link {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .tool-card,
+    .info-card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    textarea {
+        min-height: 145px;
+    }
+
+    .button-group button {
+        flex: 1 1 40%;
+        padding: 12px 10px;
+    }
+
+    .output-header {
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}

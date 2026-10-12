@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eff6ff, #f3e8ff);
+  color: #243047;
+  padding: 30px 16px;
+}
+
+.uuid-container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #5266d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.uuid-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #dfe5f5;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 35px rgba(74, 85, 140, 0.1);
+}
+
+.tool-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #69758b;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d5dced;
+  border-radius: 10px;
+  background: #fff;
+  color: #243047;
+  font: inherit;
+}
+
+select:focus,
+textarea:focus {
+  outline: 2px solid #a5b4fc;
+  border-color: #7888ee;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 17px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.primary-btn {
+  width: 100%;
+  background: #6475e8;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.output-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.secondary-btn {
+  background: #e9edff;
+  color: #4657c5;
+  padding: 9px 13px;
+}
+
+textarea {
+  min-height: 190px;
+  resize: vertical;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.clear-btn {
+  margin-top: 12px;
+  background: #f0f2f8;
+  color: #48536b;
+}
+
+#message {
+  min-height: 20px;
+  margin-bottom: 0;
+  color: #5266d8;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .uuid-card {
+    padding: 22px 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .output-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

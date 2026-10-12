@@ -1,0 +1,47 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generate unique UUIDs instantly with the DevKit UUID Generator.">
+  <title>UUID Generator | DevKit</title>
+  <link rel="stylesheet" href="../css/uuid.css">
+</head>
+<body>
+  <main class="uuid-container">
+    <a href="../index.html" class="back-link">← Back to DevKit</a>
+
+    <section class="uuid-card">
+      <div class="tool-icon">🆔</div>
+      <h1>UUID Generator</h1>
+      <p class="subtitle">Generate unique identifiers for your projects.</p>
+
+      <div class="settings">
+        <label for="uuid-count">Number of UUIDs</label>
+        <select id="uuid-count">
+          <option value="1">1 UUID</option>
+          <option value="5">5 UUIDs</option>
+          <option value="10">10 UUIDs</option>
+          <option value="20">20 UUIDs</option>
+          <option value="50">50 UUIDs</option>
+        </select>
+      </div>
+
+      <button id="generate-btn" class="primary-btn">Generate UUIDs</button>
+
+      <div class="output-heading">
+        <label for="uuid-output">Generated UUIDs</label>
+        <button id="copy-btn" class="secondary-btn">Copy All</button>
+      </div>
+
+      <textarea id="uuid-output" placeholder="Your UUIDs will appear here..." readonly></textarea>
+
+      <button id="clear-btn" class="clear-btn">Clear Output</button>
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/uuid.js"></script>
+</body>
+</html>

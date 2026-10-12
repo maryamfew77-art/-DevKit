@@ -1,0 +1,66 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert Unix timestamps to dates and dates to Unix timestamps with DevKit.">
+  <title>Timestamp Converter | DevKit</title>
+  <link rel="stylesheet" href="../css/timestamp.css">
+</head>
+<body>
+  <main class="timestamp-container">
+    <a href="../index.html" class="back-link">← Back to DevKit</a>
+
+    <section class="timestamp-card">
+      <div class="tool-icon">⏱️</div>
+      <h1>Timestamp Converter</h1>
+      <p class="subtitle">Convert Unix timestamps and dates in seconds or milliseconds.</p>
+
+      <div class="converter-section">
+        <h2>Timestamp to Date</h2>
+
+        <label for="timestamp-input">Unix Timestamp</label>
+        <input id="timestamp-input" type="number" placeholder="e.g. 1720000000">
+
+        <label for="timestamp-unit">Timestamp Unit</label>
+        <select id="timestamp-unit">
+          <option value="seconds">Seconds</option>
+          <option value="milliseconds">Milliseconds</option>
+        </select>
+
+        <button id="convert-date-btn" class="primary-btn">Convert to Date</button>
+
+        <label for="date-output">Converted Date</label>
+        <input id="date-output" type="text" readonly placeholder="Converted date appears here">
+
+        <button id="copy-date-btn" class="secondary-btn">Copy Date</button>
+      </div>
+
+      <div class="converter-section">
+        <h2>Date to Timestamp</h2>
+
+        <label for="date-input">Choose Date and Time</label>
+        <input id="date-input" type="datetime-local">
+
+        <label for="date-unit">Output Unit</label>
+        <select id="date-unit">
+          <option value="seconds">Seconds</option>
+          <option value="milliseconds">Milliseconds</option>
+        </select>
+
+        <button id="convert-timestamp-btn" class="primary-btn">Convert to Timestamp</button>
+
+        <label for="timestamp-output">Converted Timestamp</label>
+        <input id="timestamp-output" type="text" readonly placeholder="Timestamp appears here">
+
+        <button id="copy-timestamp-btn" class="secondary-btn">Copy Timestamp</button>
+      </div>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/timestamp.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Format and indent HTML and CSS code with DevKit.">
+  <title>HTML & CSS Formatter | DevKit</title>
+  <link rel="stylesheet" href="../css/code-formatter.css">
+</head>
+<body>
+  <main class="container">
+    <a href="../index.html" class="back-link">← Back to DevKit</a>
+
+    <section class="formatter-card">
+      <div class="tool-icon">🧹</div>
+      <h1>HTML & CSS Formatter</h1>
+      <p class="subtitle">Make your code clean, readable, and properly indented.</p>
+
+      <label for="language">Select Language</label>
+      <select id="language">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </select>
+
+      <label for="code-input">Input Code</label>
+      <textarea id="code-input" spellcheck="false" placeholder="Paste your HTML or CSS code here..."></textarea>
+
+      <div class="actions">
+        <button id="format-btn" class="primary-btn">Format Code</button>
+        <button id="copy-btn" class="secondary-btn">Copy Output</button>
+        <button id="clear-btn" class="clear-btn">Clear</button>
+      </div>
+
+      <label for="code-output">Formatted Output</label>
+      <textarea id="code-output" spellcheck="false" readonly placeholder="Formatted code will appear here..."></textarea>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/code-formatter.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encode and decode Base64 text online with DevKit's free Base64 converter.">
+    <title>Base64 Encoder & Decoder | DevKit</title>
+    <link rel="stylesheet" href="../css/base64.css">
+   
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">DevKit<span>.</span></a>
+        <a href="../index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <main class="container">
+        <section class="tool-header">
+            <span class="tool-icon">🔐</span>
+            <h1>Base64 Encoder & Decoder</h1>
+            <p>Encode plain text into Base64 or decode Base64 back into readable text.</p>
+        </section>
+
+        <section class="tool-card">
+            <label for="inputText">Input Text</label>
+            <textarea
+                id="inputText"
+                placeholder="Enter your text or Base64 string here..."
+                spellcheck="false"
+            ></textarea>
+
+            <div class="button-group">
+                <button id="encodeBtn" class="primary-btn">Encode</button>
+                <button id="decodeBtn" class="primary-btn">Decode</button>
+                <button id="clearBtn" class="secondary-btn">Clear</button>
+            </div>
+
+            <div class="output-header">
+                <label for="outputText">Result</label>
+                <button id="copyBtn" class="copy-btn">Copy Result</button>
+            </div>
+
+            <textarea
+                id="outputText"
+                placeholder="Your result will appear here..."
+                readonly
+                spellcheck="false"
+            ></textarea>
+
+            <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="info-card">
+            <h2>What is Base64?</h2>
+            <p>
+                Base64 is a method of representing binary data as text.
+                It is commonly used when transferring data between systems.
+            </p>
+            <p class="note">
+                Note: Base64 is an encoding format, not encryption.
+                Never use it to protect passwords or confidential information.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DevKit. Free tools for developers.</p>
+    </footer>
+  <script src="../js/base64.js"></script>
+</body>
+</html>
